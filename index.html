@@ -17,21 +17,23 @@
   <body>
     <!-- NAVIGATION -->
     <nav class="main-nav">
-      <span class="right sm-text-view"
-        ><img loading="lazy" src="images/logo_sm.svg"
-      /></span>
-      <span class="right lg-text-view"
-        ><img loading="lazy" src="images/logo_lg.svg"
-      /></span>
+      <div class="right lg-text-view">
+        <img loading="lazy" src="images/logo_lg.svg" />
+      </div>
       <ul class="main-nav-menu">
-        <li>ALL PRODUCTS</li>
-        <li onclick="showMenu()">
+        <li class="main-nav-text">ALL PRODUCTS</li>
+        <li class="main-nav-text" onclick="showMenu()">
           SOLUTIONS<img src="images/down_icon.svg" alt="down-icon" />
         </li>
-        <li>ABOUT</li>
-        <li>SUPPORT</li>
+        <li class="main-nav-text">ABOUT</li>
+        <li class="main-nav-text">SUPPORT</li>
       </ul>
-      <ul class="main-nav-actions left">
+      <ul class="main-nav-actions">
+        <li>
+          <div class="sm-text-view left">
+            <img loading="lazy" src="images/logo_sm.svg" />
+          </div>
+        </li>
         <li>
           <img
             loading="lazy"
@@ -48,6 +50,14 @@
             alt="cart-icon"
           />
         </li>
+        <li onclick="showMobileMenu();">
+          <img
+            loading="lazy"
+            class="lazy mobile-menu"
+            src="images/burger_icon.svg"
+            alt="cart-icon"
+          />
+        </li>
       </ul>
     </nav>
     <!-- CAROUSEL -->
@@ -60,7 +70,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <button class="button">Explore</button>
+            <button class="button-car">Explore</button>
           </div>
           <img class="lazy" src="images/banner_1.png" />
         </div>
@@ -105,8 +115,7 @@
       <p>Shop our latest offer and categories</p>
       <span>
         Lorem ispansum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod<br />
-        tempor incididunt ut labore et dolore magna aliqua.
+        eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </span>
     </div>
     <!-- PRODUCTS -->
@@ -125,7 +134,7 @@
       </div>
       <div id="p4" class="container-item long">
         <div>
-          <p>Laptops</p>
+          <p>Tablet</p>
           <p>Empower your <br />work</p>
         </div>
       </div>
@@ -240,20 +249,24 @@
         <p onmouseover="hover('f2')" onmouseout="unhover()">
           We Make It Easy To Find The Great Design Talent, Easier...
         </p>
+        <div id="f2" class="mobile-ideas-img">a</div>
         <p onmouseover="hover('f3')" onmouseout="unhover()">
           Road Design Handbook For The International Road...
         </p>
+        <div id="f3" class="mobile-ideas-img">a</div>
         <p onmouseover="hover('f4')" onmouseout="unhover()">
           The Best Kept Secrets About Creative People...
         </p>
+        <div id="f4" class="mobile-ideas-img">a</div>
         <p onmouseover="hover('f5')" onmouseout="unhover()">
           We Make It Easy To Find The Great Design Talent, Easier...
         </p>
+        <div id="f5" class="mobile-ideas-img">a</div>
       </div>
     </div>
     <!-- SEARCH TEXT -->
     <div class="center see-all">
-      <span style="font-size: 1.5rem; font-weight: bold">See All&#8599;</span>
+      <span class="see-all">See All&#8599;</span>
     </div>
     <div class="card">
       <div class="latest center">
@@ -268,9 +281,9 @@
               class="icon lazy"
               src="images/search_icon.svg"
             />
-            <span class="icon-text">Search Keyword</span>
+            <!-- <span class="icon-text">Search Keyword</span> -->
           </div>
-          <input class="input-field" type="text" />
+          <input class="input-field" type="text" placeholder="Search keyword" />
         </div>
       </form>
       <div class="suggestions">
@@ -288,7 +301,7 @@
       <div class="contact">
         <div class="center">
           <p class="heading-text">Never miss a thing</p>
-          <p>
+          <p class="heading-desc">
             Sign up for texts to be notified about our best offers on th perfect
             gifts.
           </p>
@@ -298,10 +311,14 @@
         </div>
         <form class="inline">
           <div class="input-contact">
-            <div>
+            <!-- <div>
               <span class="contact-text">Your email</span>
-            </div>
-            <input class="input-field-contact" type="text" />
+            </div> -->
+            <input
+              class="input-field-contact"
+              type="text"
+              placeholder="Your email"
+            />
             <button class="sign-up">Sign Up</button>
           </div>
         </form>
@@ -430,6 +447,92 @@
           </div>
         </div>
       </div>
+    </div>
+    <!-- MOBILE MENU -->
+    <div id="mob" style="display: none"  class="mobile-container">
+      <ul>
+        <li>All Products</li>
+        <li>Solutions</li>
+        <li>
+          <div class="mobile-menu">
+            <div class="solutions-menu-item">
+              <div class="solutions-margin">
+                <div class="solutions-menu-content">
+                  <div class="solutions-menu-button">
+                    <img
+                      loading="lazy"
+                      class="lazy"
+                      src="images/phone_icon.svg"
+                    />
+                  </div>
+                  <div class="solutions-menu-text">
+                    <p><b>Phones</b></p>
+                    <p>Your Day To Day Life</p>
+                  </div>
+                </div>
+              </div>
+              <div class="solutions-margin">
+                <div class="solutions-menu-content">
+                  <div class="solutions-menu-button">
+                    <img
+                      loading="lazy"
+                      class="lazy"
+                      src="images/tablet_icon.svg"
+                    />
+                  </div>
+                  <div class="solutions-menu-text">
+                    <p><b>Tablet</b></p>
+                    <p>Empower Your Work</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="solutions-menu-item">
+              <div class="solutions-margin">
+                <div class="solutions-menu-content">
+                  <div class="solutions-menu-button">
+                    <img
+                      loading="lazy"
+                      class="lazy"
+                      src="images/watch_icon.svg"
+                    />
+                  </div>
+                  <div class="solutions-menu-text">
+                    <p><b>Watch</b></p>
+                    <p>Not Just Stylisht</p>
+                  </div>
+                </div>
+              </div>
+              <div class="solutions-margin">
+                <div class="solutions-menu-content">
+                  <div class="solutions-menu-button">
+                    <img
+                      loading="lazy"
+                      class="lazy"
+                      src="images/laptop_icon.svg"
+                    />
+                  </div>
+                  <div class="solutions-menu-text">
+                    <p><b>Laptop</b></p>
+                    <p>True Laptop Solutions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mobile-menu-item">
+              <div class="mobile-descri">
+                <p>
+                  Shop headsets and headphones for destops, laptops, moble
+                  devices, business, education, <br />
+                  working from home, and video calls.
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>About</li>
+        <li>Support</li>
+      </ul>
     </div>
   </body>
 </html>
