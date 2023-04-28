@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Readex+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="main-nav">
+      <span class="right sm-text-view"
+        ><img loading="lazy" src="images/logo_sm.svg"
+      /></span>
+      <span class="right lg-text-view"
+        ><img loading="lazy" src="images/logo_lg.svg"
+      /></span>
+      <ul class="main-nav-menu">
+        <li>ALL PRODUCTS</li>
+        <li onclick="showMenu()">
+          SOLUTIONS<img src="images/down_icon.svg" alt="down-icon" />
+        </li>
+        <li>ABOUT</li>
+        <li>SUPPORT</li>
+      </ul>
+      <ul class="main-nav-actions left">
+        <li>
+          <img
+            loading="lazy"
+            class="lazy"
+            src="images/search_icon.svg"
+            alt="search-icon"
+          />
+        </li>
+        <li>
+          <img
+            loading="lazy"
+            class="lazy"
+            src="images/cart_icon.svg"
+            alt="cart-icon"
+          />
+        </li>
+      </ul>
+    </nav>
+    <!-- CAROUSEL -->
+    <div class="slideshow-container blue">
+      <div class="mySlides fade content">
+        <div class="content">
+          <div class="content-text">
+            <p class="text-header">The new phones are here take a look.</p>
+            <p class="text-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button class="button">Explore</button>
+          </div>
+          <img class="lazy" src="images/banner_1.png" />
+        </div>
+      </div>
+      <div class="mySlides fade">
+        <div class="content">
+          <div class="content-text">
+            <p class="text-header">The iPad just got a new purpose!</p>
+            <p class="text-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button class="button">Explore</button>
+          </div>
+          <img class="lazy" src="images/banner_2.png" />
+        </div>
+      </div>
+      <div class="mySlides fade">
+        <div class="content">
+          <div class="content-text">
+            <p class="text-header">Your Pro set just got better.</p>
+            <p class="text-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button class="button">Explore</button>
+          </div>
+          <img class="lazy" src="images/banner_3.png" />
+        </div>
+      </div>
+      <!-- Next and previous buttons -->
+      <img src="images/left_icon.svg" class="prev" onclick="plusSlides(-1)" />
+      <img src="images/right_icon.svg" class="next" onclick="plusSlides(1)" />
+      <div class="hr-line">
+        <hr class="hr-line-button" onclick="currentSlide(1)" />
+        <hr class="hr-line-button" onclick="currentSlide(2)" />
+        <hr class="hr-line-button" onclick="currentSlide(3)" />
+      </div>
+    </div>
+    <!-- LATEST TEXT -->
+    <div class="latest center">
+      <p>Shop our latest offer and categories</p>
+      <span>
+        Lorem ispansum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod<br />
+        tempor incididunt ut labore et dolore magna aliqua.
+      </span>
+    </div>
+    <!-- PRODUCTS -->
+    <div class="container">
+      <div id="p1" class="container-item">
+        <div>
+          <p>Laptops</p>
+          <p>True Laptop <br />Solution</p>
+        </div>
+      </div>
+      <div id="p3" class="container-item long">
+        <div>
+          <p>Phones</p>
+          <p>Your day to day <br />life</p>
+        </div>
+      </div>
+      <div id="p4" class="container-item long">
+        <div>
+          <p>Laptops</p>
+          <p>Empower your <br />work</p>
+        </div>
+      </div>
+      <div id="p2" class="container-item">
+        <div>
+          <p>Watch</p>
+          <p>Not just <br />stylisht</p>
+        </div>
+      </div>
+    </div>
+    <!-- IDEAS TEXT -->
+    <div class="latest center">
+      <p>Saved on our most selled items.</p>
+      <span>
+        Our new Limited Edition Winter design BESPOKE 4-Door Flex&trade;
+      </span>
+    </div>
+    <!-- BEST SELLER -->
+    <div class="container-best-seller">
+      <div class="container-best-seller-item">
+        <div class="best-seller-image">
+          <img loading="lazy" class="lazy" src="images/b1.png" />
+        </div>
+        <h3>Macbook Pro 13</h3>
+        <p class="best-seller-description">
+          Lorem ispansum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <h4>$ 1,200.00 USD</h4>
+      </div>
+      <div class="container-best-seller-item">
+        <div class="best-seller-image">
+          <img loading="lazy" class="sm-img lazy" src="images/b2.png" />
+        </div>
+        <h3>Smart Galaxy Watch 3</h3>
+        <p class="best-seller-description">
+          Lorem ispansum dolor sit amet, consectetur adipiscing elit.Lorem
+          ispansum dolor sit amet consectetur adipiscing elit.
+        </p>
+        <h4>$ 199.00 USD</h4>
+      </div>
+      <div class="container-best-seller-item">
+        <div class="best-seller-image">
+          <img loading="lazy" class="lazy" src="images/b3.png" />
+        </div>
+        <h3>Macbook Air M1</h3>
+        <p class="best-seller-description">
+          Lorem ispansum dolor sit amet, consectetur adipiscing elit.Lorem
+          ispansum dolor sit amet consectetur adipiscing elit.
+        </p>
+        <h4>$ 1,009.00 USD</h4>
+      </div>
+      <div class="container-best-seller-item">
+        <div class="best-seller-image">
+          <img loading="lazy" class="sm-img lazy" src="images/b4.png" />
+        </div>
+        <h3>iPad</h3>
+        <p class="best-seller-description">
+          Lorem ispansum dolor sit amet, consectetur adipiscing elit.Lorem
+          ispansum dolor sit amet consectetur adipiscing elit.
+        </p>
+        <h4>$ 610.00 USD</h4>
+      </div>
+    </div>
+    <div class="card">
+      <!-- BEST AROUND TEXT -->
+      <div class="latest center">
+        <p>See the best around here</p>
+        <span>
+          Our new Limited Edition Winter design BESPOKE 4-Door Flex&trade;
+        </span>
+      </div>
+      <!-- BEST AROUND -->
+
+      <div class="container-best-around">
+        <div class="container-best-around-item">
+          <p class="best-around-description">Smart light bulb pack</p>
+          <h2 style="margin-top: 0">Latest and greates</h2>
+          <button class="button">Explore</button>
+          <div class="best-around-image">
+            <img loading="lazy" class="sm-img lazy" src="images/s1.png" />
+          </div>
+        </div>
+        <div class="container-best-around-item">
+          <p class="best-around-description">Smart light bulb pack</p>
+          <h2 style="margin-top: 0">Best selling</h2>
+          <button class="button">Explore</button>
+          <div class="best-around-image">
+            <img loading="lazy" class="sm-img lazy" src="images/s2.png" />
+          </div>
+        </div>
+        <div class="container-best-around-item">
+          <p class="best-around-description">Smart light bulb pack</p>
+          <h2 style="margin-top: 0">Every product</h2>
+          <button class="button">Explore</button>
+          <div class="best-around-image">
+            <img loading="lazy" class="md-img lazy" src="images/s3.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- IDEAS TEXT -->
+    <div class="latest center">
+      <p>Ideas have a place here</p>
+      <span>
+        Our new Limited Edition Winter design BESPOKE 4-Door Flex&trade;
+      </span>
+    </div>
+    <!-- IDEAS -->
+    <div id="cont" class="container-ideas">
+      <div id="f1" class="container-ideas-item"></div>
+      <div class="container-ideas-item">
+        <p onmouseover="hover('f2')" onmouseout="unhover()">
+          We Make It Easy To Find The Great Design Talent, Easier...
+        </p>
+        <p onmouseover="hover('f3')" onmouseout="unhover()">
+          Road Design Handbook For The International Road...
+        </p>
+        <p onmouseover="hover('f4')" onmouseout="unhover()">
+          The Best Kept Secrets About Creative People...
+        </p>
+        <p onmouseover="hover('f5')" onmouseout="unhover()">
+          We Make It Easy To Find The Great Design Talent, Easier...
+        </p>
+      </div>
+    </div>
+    <!-- SEARCH TEXT -->
+    <div class="center see-all">
+      <span style="font-size: 1.5rem; font-weight: bold">See All&#8599;</span>
+    </div>
+    <div class="card">
+      <div class="latest center">
+        <p style="margin: 0">Looking for anything else</p>
+      </div>
+      <!-- SEARCH BAR -->
+      <form class="inline">
+        <div class="input-icons">
+          <div>
+            <img
+              loading="lazy"
+              class="icon lazy"
+              src="images/search_icon.svg"
+            />
+            <span class="icon-text">Search Keyword</span>
+          </div>
+          <input class="input-field" type="text" />
+        </div>
+      </form>
+      <div class="suggestions">
+        <button class="button">iPhone</button>
+        <button class="button">Charger</button>
+        <button class="button">Gift</button>
+        <button class="button">Google Pixel 3</button>
+        <button class="button">Keyboard</button>
+        <button class="button">13 Pro Max</button>
+        <button class="button">iPhone 12</button>
+        <button class="button">Laptop</button>
+        <button class="button">Mobile</button>
+      </div>
+      <!-- CONTACT -->
+      <div class="contact">
+        <div class="center">
+          <p class="heading-text">Never miss a thing</p>
+          <p>
+            Sign up for texts to be notified about our best offers on th perfect
+            gifts.
+          </p>
+        </div>
+        <div class="contact-image">
+          <img loading="lazy" class="lazy" src="images/c1.png" />
+        </div>
+        <form class="inline">
+          <div class="input-contact">
+            <div>
+              <span class="contact-text">Your email</span>
+            </div>
+            <input class="input-field-contact" type="text" />
+            <button class="sign-up">Sign Up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer class="container-footer">
+      <div class="container-footer-item long-col">
+        <ul>
+          <li><img loading="lazy" class="lazy" src="images/logo_lg.svg" /></li>
+          <li>
+            Sign up for texts to be notified about our best offers on the
+            perfect gifts.
+          </li>
+        </ul>
+      </div>
+      <div class="container-footer-item">
+        <ul>
+          <li class="bold">All Products</li>
+          <li>Phones</li>
+          <li>Watch</li>
+          <li>Tablet</li>
+          <li>Laptops</li>
+        </ul>
+      </div>
+      <div class="container-footer-item">
+        <ul>
+          <li class="bold">Company</li>
+          <li>About</li>
+          <li>Support</li>
+        </ul>
+      </div>
+      <div class="container-footer-item">
+        <ul>
+          <li class="bold">Support</li>
+          <li>Style Guide</li>
+          <li>Licensing</li>
+          <li>Change Log</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="container-footer-item">
+        <ul>
+          <li class="bold">Follow Us</li>
+          <li>Instagram</li>
+          <li>Facebook</li>
+          <li>LinkedIn</li>
+          <li>Youtube</li>
+        </ul>
+      </div>
+    </footer>
+    <!-- SOLUTIONS MENU -->
+    <div id="sol" style="display: none" class="solutions hide">
+      <div class="solutions-menu">
+        <div class="solutions-menu-item">
+          <div class="solutions-margin">
+            <div class="solutions-menu-content">
+              <div class="solutions-menu-button">
+                <img loading="lazy" class="lazy" src="images/phone_icon.svg" />
+              </div>
+              <div class="solutions-menu-text">
+                <p><b>Phones</b></p>
+                <p>Your Day To Day Life</p>
+              </div>
+            </div>
+          </div>
+          <div class="solutions-margin">
+            <div class="solutions-menu-content">
+              <div class="solutions-menu-button">
+                <img loading="lazy" class="lazy" src="images/tablet_icon.svg" />
+              </div>
+              <div class="solutions-menu-text">
+                <p><b>Tablet</b></p>
+                <p>Empower Your Work</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions-menu-item">
+          <div class="solutions-margin">
+            <div class="solutions-menu-content">
+              <div class="solutions-menu-button">
+                <img loading="lazy" class="lazy" src="images/watch_icon.svg" />
+              </div>
+              <div class="solutions-menu-text">
+                <p><b>Watch</b></p>
+                <p>Not Just Stylisht</p>
+              </div>
+            </div>
+          </div>
+          <div class="solutions-margin">
+            <div class="solutions-menu-content">
+              <div class="solutions-menu-button">
+                <img loading="lazy" class="lazy" src="images/laptop_icon.svg" />
+              </div>
+              <div class="solutions-menu-text">
+                <p><b>Laptop</b></p>
+                <p>True Laptop Solutions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions-menu-item long">
+          <div class="solutions-article">
+            <ul>
+              <li class="solutions-article-image">
+                <img loading="lazy" class="lazy" src="images/f5.png" />
+              </li>
+              <li class="padding-left">EDITORIAL</li>
+              <li class="padding-left">
+                <h3>
+                  We Make It Easy To Find <br />The Great Design Talent, <br />
+                  Easier...
+                </h3>
+              </li>
+              <li class="padding-left">June 15, 2022</li>
+            </ul>
+          </div>
+        </div>
+        <div class="solutions-menu-item col-md">
+          <div class="descri">
+            <p>
+              Shop headsets and headphones for destops, laptops, moble devices,
+              business, education, <br />
+              working from home, and video calls.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
