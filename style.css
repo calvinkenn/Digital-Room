@@ -875,7 +875,7 @@ button:hover {
 
 .suggestions {
     max-width: 750px;
-    margin: auto;
+    margin: 10px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -897,6 +897,18 @@ button:hover {
 @media screen and (max-width: 800px) {
     .see-all {
         font-size: .8rem;
+    }
+
+    .suggestions button {
+        padding: 7px 17px;
+        margin: 5px;
+        font-size: .7rem;
+    }
+
+    .input-field::placeholder {
+        padding-left: 25px;
+        font-size: .9rem;
+        color: black;
     }
 }
 
