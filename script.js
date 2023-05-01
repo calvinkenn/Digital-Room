@@ -33,17 +33,15 @@ function showSlides(n) {
 
 //Change src of the image
 function hover(p) {
-  document
-    .getElementById("cont")
-    .getElementsByTagName("div")[0]
-    .setAttribute("id", p);
+  const cont = document.getElementById("cont").getElementsByTagName("div")[0];
+  cont.setAttribute("id", p);
+  cont.setAttribute("class", "container-ideas-item-image elementFadeIn");
 }
 
 function unhover() {
-  document
-    .getElementById("cont")
-    .getElementsByTagName("div")[0]
-    .setAttribute("id", "f1");
+  const cont = document.getElementById("cont").getElementsByTagName("div")[0];
+  cont.setAttribute("id", "f1");
+  cont.setAttribute("class", "container-ideas-item-image elementFadeOut");
 }
 
 function showMenu() {

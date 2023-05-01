@@ -212,7 +212,7 @@ body {
 }
 
 .mySlides img {
-    width: 700px;
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
@@ -276,7 +276,7 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
-    .content-text{
+    .content-text {
         padding: 0 10px;
     }
 }
@@ -294,9 +294,9 @@ body {
         padding-top: 25px;
     }
 
-    .mySlides img {
-        width: 350px;
-    }
+    /* .mySlides img {
+        width: 100%;
+    } */
 
     .hr-line-button {
         width: 5rem;
@@ -586,7 +586,7 @@ body {
     padding: 15px 0;
 }
 
-.best-seller-image>.sm-img {
+.best-seller-image>picture .sm-img {
     width: 40%;
     object-fit: cover;
 }
@@ -620,11 +620,11 @@ body {
     }
 
     .best-seller-image>.sm-img {
-        width: 30%;
+        width: auto;
     }
 
     .best-seller-image img {
-        width: 60%;
+        width: auto;
     }
 }
 
@@ -664,7 +664,7 @@ button:hover {
 }
 
 .best-around-image img {
-    width: 80%;
+    width: auto;
     object-fit: cover;
 }
 
@@ -673,15 +673,15 @@ button:hover {
     padding: 0;
 }
 
-.best-around-image>.sm-img {
+/* .best-around-image>.sm-img {
     width: 60%;
     object-fit: cover;
-}
+} */
 
-.best-around-image>.md-img {
+/* .best-around-image>.md-img {
     width: 70%;
     object-fit: cover;
-}
+} */
 
 @media screen and (max-width: 800px) {
     .container-best-around {
@@ -713,11 +713,26 @@ button:hover {
     width: 40%;
     border-radius: 20px;
     padding-left: 25px;
-    transition: 0.6s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.container-ideas-item-image {
+    width: 40%;
+    border-radius: 20px;
+    padding-left: 25px;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .container-ideas-item p {
     font-size: 1.5rem;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
 }
 
 #f1 {
@@ -748,6 +763,36 @@ button:hover {
     background: url('images/f5.png') center center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.elementFadeIn {
+    opacity: 1;
+    animation: fade 0.5s linear forwards;
+}
+
+.elementFadeOut {
+    opacity: 0;
+    animation: fadeOut 0.5s linear forwards;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .mobile-ideas-img {
@@ -910,7 +955,7 @@ button:hover {
 }
 
 .contact-image img {
-    width: 200px;
+    width: auto;
 }
 
 .heading-text {
@@ -935,9 +980,9 @@ button:hover {
         padding: 25px 10px;
     }
 
-    .contact-image img {
+    /* .contact-image img {
         width: 150px;
-    }
+    } */
 
     .heading-text {
         font-size: 1rem;
