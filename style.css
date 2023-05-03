@@ -1084,8 +1084,8 @@ button:hover {
 
 .solutions-menu {
     margin: auto;
-    width: 1300px;
-    height: 590px;
+    width: 1350px;
+    height: 700px;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 2fr 1fr 2fr;
